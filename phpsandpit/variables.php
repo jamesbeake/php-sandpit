@@ -24,5 +24,7 @@
     $float1 = 4.4;
     $bool1 = true;
 
-    echo $string3;
+    define('GREETING', 'Hello Everyone\'s body', true);
+
+    echo greeting;
 ?>
