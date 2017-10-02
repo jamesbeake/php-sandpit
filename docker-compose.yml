@@ -1,0 +1,16 @@
+---
+version: '3.2'
+
+services:
+  PHP:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image:  jamesbeake/php-tut:0.1
+    container_name: php-tut
+    ports:
+      - "3000:3000"
+#    command: ["php"]
+    volumes:
+      - ./app/server/src:/app/src
+
