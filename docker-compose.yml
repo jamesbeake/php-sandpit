@@ -13,7 +13,7 @@ services:
     command: ["php", "-S", "0.0.0.0:3000"]
     volumes:
 #      - ./app/server/src:/app/src
-      - ./phpsandpit:/usr/src/app
+      - ./phpsandpit/website1:/usr/src/app
 
 
 
