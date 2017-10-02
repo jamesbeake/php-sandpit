@@ -10,7 +10,10 @@ services:
     container_name: php-tut
     ports:
       - "3000:3000"
-#    command: ["php"]
+    command: ["php", "-S", "0.0.0.0:3000"]
     volumes:
-      - ./app/server/src:/app/src
+#      - ./app/server/src:/app/src
+      - ./phpsandpit:/usr/src/app
+
+
 
